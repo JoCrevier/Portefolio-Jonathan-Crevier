@@ -1,7 +1,7 @@
 # Justification des choix technologiques
 * ### Gestion de base de données : fichier .json
-* ### Animations : Anime.js
-* ### Structure de Naviguation : one-pager 
+* ### Animations : Anime.js et css animation
+* ### Structure de Naviguation : multi-pager ( page principale puis 10 pages pour chaque projet )
 * ### Hébergement : Github Pages 
 
 
