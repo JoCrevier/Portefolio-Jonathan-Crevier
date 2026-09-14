@@ -1,8 +1,8 @@
 # Justification des choix technologiques
-* ### Gestion de base de données : fichier .json
-* ### Animations : Anime.js et css animation
-* ### Structure de Naviguation : multi-pager ( page principale puis 1 pages dynamique pour afficher les projets basé sur la base de donnée en json ).
-* ### Hébergement : Github Pages 
+* ### Gestion de base de données : fichier .json | Justification : J'ai déja utilisé ce genre de fichier pour gérer des bases de donnée. j'ai également déja des connaissances de base avec ce genre de fichier.
+* ### Animations : Anime.js et css animation | Justification : J'ai déja utilisé ce genre de "technologie" pour faire des animations.
+* ### Structure de Naviguation : multi-pager ( page principale puis 1 pages dynamique pour afficher les projets basé sur la base de donnée en json ). | Justification : Puisque mes projets sont complexes j'ai décidé d'afficher chaque projet dans une autre fenêtre pour afficher plus de détail.
+* ### Hébergement : Github Pages | Justification : J'ai décidé d'utiliser Github pages puisque c'est simple d'utilisation et suffisant pour mon projet.
 
 
 
