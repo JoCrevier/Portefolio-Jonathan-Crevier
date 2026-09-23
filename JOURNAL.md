@@ -13,4 +13,4 @@
 
 1. **Date** : 2026-09-10 | **Prompt** : je veux que tu me fasse un site portefolio avec ces 2 images si. je veux que ce sois très design et modern un peu dans le même style que les images | **L'outil** : Figma Make | **Résultat** : un site internet ( portfolio ) basé sur les 2 captures d'écrans que je lui ai données. Très semblable au style que je voulais voir exactement cela.
 
-2.  **Date** : 2026-09-18 | **Prompt** : Change la couleur des textes du menu NAV dans le header puis align tout les informations qui se trouve dans le header de manière les avoir alignée a l'horizontale. | **L'ouil** : Copilot | **Résultat** : Alignement des textes a l'horizontale ainsi que le changement de couleur pour les textes du NAV dans le header.
+2.  **Date** : 2026-09-18 | **Prompt** : Change la couleur des textes du menu NAV dans le header puis align tout les informations qui se trouve dans le header de manière à les avoir alignée a l'horizontale. | **L'outil** : Copilot | **Résultat** : Alignement des textes a l'horizontale ainsi que le changement de couleur pour les textes du NAV dans le header.
