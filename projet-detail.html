@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Détail du projet | Jonathan C</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./component/about.css">
     <link rel="stylesheet" href="./component/base.css">
     <link rel="stylesheet" href="./component/footer.css">
@@ -49,8 +49,9 @@
     </header>
 
     <main class="main">
-        <article class="project-detail">
-            <header class="project-detail__header">
+        <section class="project-detail">
+            <!-- En-tête -->
+            <div class="project-detail__header">
                 <a href="index.html" class="project-detail__back">← Retour aux projets</a>
                 <span class="project-detail__number"></span>
                 <h1 class="project-detail__title"></h1>
@@ -72,25 +73,29 @@
                         Voir les images ↓
                     </a>
                 </div>
-            </header>
+            </div>
 
-            <section class="project-detail__section" aria-labelledby="project-description-title">
-                <h2 id="project-description-title">Description du projet</h2>
+            <!-- Description longue -->
+            <div class="project-detail__section">
+                <h2>Description du projet</h2>
                 <p class="project-detail__description"></p>
-            </section>
+            </div>
 
-            <section class="project-detail__section" id="project-process-section" style="display: none;" aria-labelledby="project-process-title">
-                <h2 id="project-process-title">Processus créatif</h2>
+            <!-- Processus créatif (s'affiche si présent dans le JSON) -->
+            <div class="project-detail__section" id="project-process-section" style="display: none;">
+                <h2>Processus créatif</h2>
                 <p class="project-detail__process"></p>
-            </section>
+            </div>
 
-            <section class="project-detail__section" id="project-gallery-section" aria-labelledby="project-gallery-title">
-                <h2 id="project-gallery-title">Galerie du projet</h2>
+            <!-- Galerie d'images en colonnes (2 par rangée) -->
+            <div class="project-detail__section" id="project-gallery-section">
+                <h2>Galerie du projet</h2>
                 <div class="project-detail__gallery" id="project-gallery"></div>
-            </section>
-        </article>
+            </div>
+        </section>
     </main>
 
+    <!-- Lightbox pour la page de détail -->
     <div class="projectlightbox" id="project-lightbox">
         <div class="projectlightbox__backdrop" data-close="true"></div>
         <div class="projectlightbox__panel" role="dialog" aria-modal="true" aria-label="Aperçu de l'image du projet">
@@ -99,6 +104,16 @@
         </div>
     </div>
 
+    <!-- Lightbox pour la page de détail (Images) -->
+    <div class="projectlightbox" id="project-lightbox">
+        <div class="projectlightbox__backdrop" data-close="true"></div>
+        <div class="projectlightbox__panel" role="dialog" aria-modal="true" aria-label="Aperçu de l'image du projet">
+            <button type="button" class="projectlightbox__close" aria-label="Fermer l'image">×</button>
+            <img class="projectlightbox__image" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Lightbox pour la vidéo (À RAJOUTER ICI) -->
     <div class="projectlightbox" id="project-video-lightbox">
         <div class="projectlightbox__backdrop" data-close-video="true"></div>
         <div class="projectlightbox__panel" role="dialog" aria-modal="true" aria-label="Lecture de la vidéo du projet">

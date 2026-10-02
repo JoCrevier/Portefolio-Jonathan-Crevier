@@ -47,11 +47,12 @@
         </div>
     </header>
 
-            <section class="hero" aria-labelledby="hero-title">
+    <herosection>
         <div class="background02">
 
             <div class="presentation">
-                        <h1 class="titre03" id="hero-title">PORT <span class="titre04">FOLIO</span></h1>
+                <p class="titre03">PORT</p>
+                <p class="titre04">FOLIO</p>
             </div>
 
             <div class="separation01"></div>
@@ -62,18 +63,20 @@
                 </div>
 
                 <div class="button01">
-                            <a href="#projets">VOIR LES PROJETS</a>
+                    <button>
+                        <p>VOIR LES PROJETS</p>
+                    </button>
                 </div>
             </div>
 
         </div>
-            </section>
+    </herosection>
 
     <main class="main">
 
-                <section id="projets" class="projet" aria-labelledby="projets-title">
-                    <header class="hautpage01">
-                        <h2 class="titre02" id="projets-title">Projets sélectionnés</h2>
+        <div id="projets" class="projet">
+            <div class="hautpage01">
+                <p class="titre02">Projets sélectionnés</p>
                 <button type="button" class="projectfilters-toggle" aria-controls="project-filters" aria-expanded="false">
                     <span class="projectfilters-toggle__label">Catégories</span>
                     <span class="projectfilters-toggle__icon" aria-hidden="true">
@@ -96,16 +99,16 @@
                         <li><button type="button" class="projectfilter" data-filter="logiciel">Logiciel</button></li>
                     </ul>
                 </nav>
-            </header>
+            </div>
             <div class="listeprojet"></div>
-        </section>
+        </div>
 
-        <section id="propos" class="propos" aria-labelledby="propos-title">
+        <section id="propos" class="propos">
             <div class="propos__inner">
                 <div class="propos__left">
                     <p class="propos__eyebrow">À PROPOS</p>
 
-                    <h2 class="propos__title" id="propos-title">
+                    <h2 class="propos__title">
                         <span>CRÉER &</span>
                         <span>EXPLORER</span>
                     </h2>
@@ -161,11 +164,11 @@
             </div>
         </section>
 
-        <section id="outils" class="outils" aria-labelledby="outils-title">
-            <header class="hautpage02">
-                <h2 class="titre05" id="outils-title">Outils & Logiciels</h2>
+        <div id="outils" class="outils">
+            <div class="hautpage02">
+                <p class="titre05">Outils & Logiciels</p>
                 <p class="titre06">14 outils maîtrisés</p>
-            </header>
+            </div>
             <div class="listeoutils">
                 <ul class="listeoutilsG">
                     <li><span class="toolname">Visual Studio Code</span><span class="toolcategory">Code</span></li>
@@ -187,15 +190,16 @@
                     <li><span class="toolname">Blender</span><span class="toolcategory">3D</span></li>
                 </ul>
             </div>
-        </section>
 
-        <section id="contact" class="contact" aria-labelledby="contact-title">
-            <p class="contact__subtitle">CONTACT</p>
+        </div>
 
-            <header class="contact__title-container">
-                <h2 class="contact__title contact__title--filled" id="contact-title">TRAVAILLONS</h2>
-                <p class="contact__title contact__title--outlined">ENSEMBLE.</p>
-            </header>
+        <section id="contact" class="contact">
+            <span class="contact__subtitle">CONTACT</span>
+
+            <div class="contact__title-container">
+                <h2 class="contact__title contact__title--filled">TRAVAILLONS</h2>
+                <h2 class="contact__title contact__title--outlined">ENSEMBLE.</h2>
+            </div>
 
             <a href="mailto:hello@alaurent.studio" class="contact__email">hello@alaurent.studio</a>
         </section>
