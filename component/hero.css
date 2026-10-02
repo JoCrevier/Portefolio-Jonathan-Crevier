@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Montserrat:wght@300;400&display=swap');
 
-.hero {
+herosection {
     display: block;
     background-color: #0b0b0b;
     padding: 260px 20px 0 20px; 
@@ -42,12 +42,7 @@
     word-break: break-word;
 }
 
-.titre03 {
-    display: block;
-}
-
 .titre04 {
-    display: block;
     color: transparent;
     -webkit-text-stroke: 2px #938775;
     margin-top: 12px;
@@ -97,8 +92,7 @@
     padding: 0;                     
 }
 
-.button01 button,
-.button01 a {
+.button01 button {
     border: 0;
     background: transparent;
     padding: 0;
@@ -107,11 +101,9 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    text-decoration: none;
 }
 
-.button01 button p,
-.button01 a {
+.button01 button p {
     margin: 0;
     line-height: 1;
 }
