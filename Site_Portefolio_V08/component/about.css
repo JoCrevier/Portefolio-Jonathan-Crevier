@@ -1,0 +1,167 @@
+.propos {
+    background: #0b0b0b;
+    color: #d8c8b4;
+    padding: 160px 4vw; 
+    width: 100%;            
+    max-width: 100%;        
+    box-sizing: border-box;    
+}
+
+.propos__inner {
+    max-width: 1280px; 
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: 70px;
+    align-items: stretch;
+}
+
+.propos__left,
+.propos__right {
+    min-width: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.propos__eyebrow {
+    margin: 0 0 24px;
+    color: #b39f87;
+    font-size: 0.88rem; 
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+}
+
+.propos__title {
+    font-family: 'Anton', 'Impact', sans-serif;
+    margin: 0;
+    display: grid;
+    gap: 0;
+    font-size: clamp(3rem, 6vw, 5.2rem); 
+    line-height: 1.02;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.propos__title span:last-child {
+    -webkit-text-stroke: 1.5px #938775;
+    color: transparent;
+}
+
+.propos__traits {
+    list-style: none;
+    margin: auto 0 0;
+    padding: 0;
+    display: grid;
+    gap: 22px;
+}
+
+.propos__trait {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 20px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(216, 200, 180, 0.14);
+}
+
+.propos__traitNumber {
+    color: rgba(216, 200, 180, 0.35);
+    font-size: 0.85rem; 
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding-top: 4px;
+}
+
+.propos__trait h3 {
+    margin: 0;
+    font-size: 1.3rem; 
+    line-height: 1;
+    color: #d6d6d6;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.propos__trait p {
+    margin: 8px 0 0;
+    font-style: italic;
+    font-size: 1rem; 
+    line-height: 1.5;
+    color: rgba(232, 220, 205, 0.82);
+}
+
+.propos__right {
+    padding-top: 0;
+    display: grid;
+    gap: 32px;
+}
+
+.propos__badge {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 12px 20px;
+    border: 1px solid rgba(216, 200, 180, 0.15);
+    color: #938775;
+    font-size: 0.85rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+}
+
+.propos__right p:not(.propos__badge) {
+    margin: 0;
+    max-width: 60ch;
+    color: rgba(232, 220, 205, 0.88);
+    font-size: 1.1rem; 
+    line-height: 1.75;
+}
+
+.propos__stats {
+    margin-top: auto;
+    padding-top: 32px;
+    border-top: 1px solid rgba(216, 200, 180, 0.14);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.propos__stat {
+    display: grid;
+    gap: 8px;
+}
+
+.propos__stat strong {
+    font-size: clamp(3.2rem, 5.5vw, 5.2rem); 
+    line-height: 0.9;
+    color: #938775;
+    font-weight: 900;
+}
+
+.propos__stat span {
+    font-size: 0.85rem; 
+    letter-spacing: 0.28em;
+    color: #938775;
+    text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+    .propos {
+        padding: 72px 20px;
+    }
+
+    .propos__inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .propos__right {
+        padding-top: 0;
+    }
+
+    .propos__stats {
+        grid-template-columns: 1fr;
+    }
+}

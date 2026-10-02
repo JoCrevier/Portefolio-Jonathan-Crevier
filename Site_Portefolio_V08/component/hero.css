@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Montserrat:wght@300;400&display=swap');
+
+herosection {
+    display: block;
+    background-color: #0b0b0b;
+    padding: 260px 20px 0 20px; 
+    width: 100%;
+    min-height: 70vh;
+    box-sizing: border-box;
+}
+
+.background01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.background02 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: calc(70vh - 260px);
+    box-sizing: border-box;
+}
+
+.presentation {
+    width: 100%;
+}
+
+.titre03,
+.titre04 {
+    margin: 0;
+    font-family: 'Anton', 'Bebas Neue', sans-serif;
+    font-size: clamp(4rem, 13vw, 11rem);
+    line-height: 0.98;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #938775;
+    word-break: break-word;
+}
+
+.titre04 {
+    color: transparent;
+    -webkit-text-stroke: 2px #938775;
+    margin-top: 12px;
+}
+
+/* Barre de séparation */
+.separation01 {
+    width: 100%;
+    height: 1px;
+    background-color: #d6d6d6;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+/* Conteneur sous la ligne : Espace augmenté (60px haut et bas) */
+.nombutton01 {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 20px;
+    flex-grow: 1; 
+    padding-top: 100px;     
+    padding-bottom: 100px; 
+    box-sizing: border-box;
+}
+
+.nom02 {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.studentname {
+    font-family: 'Anton', 'Bebas Neue', sans-serif;
+    margin: 0;
+    font-size: clamp(1.1rem, 2vw, 1.8rem);
+    font-weight: 500;
+    color: #d6d6d6;
+    line-height: 1;
+}
+
+/* Bouton */
+.button01 {
+    font-family: 'Fira Sans', 'Montserrat', sans-serif;
+    background-color: transparent; 
+    padding: 0;                     
+}
+
+.button01 button {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    font: inherit;
+    color: #d6d6d6;                 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.button01 button p {
+    margin: 0;
+    line-height: 1;
+}

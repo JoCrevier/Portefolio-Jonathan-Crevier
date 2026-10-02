@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+
+.outils {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    padding: 60px 40px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hautpage02 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 50px 40px;
+    margin-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.titre05,
+.titre06 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.titre05 {
+    color: #a0a0a0;
+}
+
+.titre06 {
+    color: #707070;     
+    font-style: italic; 
+}
+
+.listeoutils {
+    display: flex;
+    width: 100%;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.listeoutilsG,
+.listeoutilsD {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.listeoutilsG {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.listeoutils li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 40px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12); 
+    box-sizing: border-box;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toolname {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Oswald', 'Impact', 'Arial Narrow', sans-serif; 
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em; 
+    color: #d6d6d6;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.toolname::before {
+    content: "•";
+    color: #707070;
+    font-size: 1.2rem;
+}
+
+.toolcategory {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #606060;
+}
+
+.listeoutils li:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.listeoutils li:hover .toolname {
+    transform: translateX(10px);
+}
+
+@media (max-width: 768px) {
+    .listeoutils {
+        flex-direction: column;
+    }
+    
+    .listeoutilsG,
+    .listeoutilsD {
+        width: 100%;
+    }
+
+    .listeoutilsG {
+        border-right: none;
+    }
+}

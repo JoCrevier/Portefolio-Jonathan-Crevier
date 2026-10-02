@@ -1,0 +1,133 @@
+/* --- COMPOSANT LIGHTBOX --- */
+.projectlightbox {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* État ouvert */
+.projectlightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Fond semi-transparent */
+.projectlightbox__backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75); 
+}
+
+/* Panneau de l'image (position relative pour ancrer le bouton X) */
+.projectlightbox__panel {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+/* Image agrandie avec coins légèrement arrondis */
+.projectlightbox__image {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    display: block;
+    background: transparent;
+    border-radius: 8px; /* Ajustez la valeur si vous souhaitez des coins plus ou moins arrondis */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Ajout d'une ombre légère pour détacher l'image du fond */
+}
+
+/* Bouton de fermeture positionné par-dessus l'image dans le coin supérieur droit */
+.projectlightbox__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour bien le voir peu importe l'image */
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Bouton rond esthétique */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    padding: 0;
+    line-height: 1;
+}
+
+.projectlightbox__close:hover {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+/* Bloquer le défilement de la page quand la lightbox est ouverte */
+body.has-lightbox-open {
+    overflow: hidden;
+}
+
+/* --- COMPOSANT LIGHTBOX VIDÉO (extension) --- */
+
+/* Conteneur de la vidéo pour respecter un format propre et s'adapter */
+.projectlightbox__video-container {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Élément vidéo avec les mêmes arrondis et ombres que les images */
+.projectlightbox__video-element {
+    max-width: 100%;
+    max-height: 90vh;
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #000;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+/* Positionnement relatif pour la miniature vidéo */
+.project-detail__gallery-item--video {
+    position: relative;
+}
+
+/* Icône Play centrée par-dessus l'image */
+.project-detail__play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    pointer-events: none; /* Empêche l'icône de bloquer le clic sur le bouton */
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.project-detail__galleryButton:hover .project-detail__play-icon {
+    background: rgba(0, 0, 0, 0.85);
+    transform: translate(-50%, -50%) scale(1.1);
+}
