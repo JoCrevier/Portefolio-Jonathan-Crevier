@@ -1,0 +1,122 @@
+
+[
+  {
+    "id": 1,
+    "categorie": ["logiciel", "professionnel"],
+    "name": "Code name Boogeyman",
+    "court description": "Création et commercialisation du jeu vidéo Code name boogeyman",
+    "description": "Code name boogeyman est un jeu vidéo de tir à la 3ieme personne inspiré de films et jeux vidéos connu tel que John Wick et HITMAN. C'est un projet entièrement solo que j'ai moi même développé et commercialisé sur les plateformes en ligne Epic game et Steam.",
+    "processus créatif": "La création de mon jeu a demandé beaucoup de réflexion, et c'est un processus qui continue encore aujourd'hui. Pour les niveaux et l'interface, je me suis inspiré de la série des jeux Hitman : j'ai conçu de grandes cartes qui amènent le joueur à voyager à travers le monde dans différents pays, avec une interface très simple pour le garder complètement immergé. Pour tout le reste, ma référence principale a été John Wick. Pour les armes, je me suis inspiré du film pour choisir des modèles modernes et précis. Pour le gameplay, j'ai voulu reproduire le style de combat très fluide des films en permettant d'enchaîner les tirs à courte distance, de passer rapidement d'une arme à l'autre et de maintenir un rythme rapide et agressif. Enfin, pour l'ambiance, j'ai utilisé des lumières colorées et des zones sombres pour créer une atmosphère classe, stylisée et tendue.",
+    "software used": "Unreal engine 4",
+    "image": "images/CNBM_02.jpg",
+    "galerie": ["images/CNBM_02.jpg", "images/CNBM_03.png", "images/CNBM_04.png", "images/CNBM_05.png"]
+  },
+  {
+    "id": 2,
+    "categorie": ["3D", "académique"],
+    "name": "F-35",
+    "court description": "Animation 3D d'un avion de chasse F-35 qui vole à travers des montagnes.",
+    "description": "Ce projet, réalisé dans le cadre du cours d'Animation 3D est une vidéo d'une minute d'un avion de chasse F-35 qui vole à travers des montagnes. J'ai réalisé le décor ainsi que les animations par moi-même. L'avion de chasse a été trouver sur Sketchfab puis modifier par moi pour le bien de la vidéo. Tout le montage a été fait avec DaVinci Resolve.",
+    "processus créatif": "En tant que passionné d'aéronautique, je voulais réaliser un projet qui me tenait vraiment à coeur. J'ai donc choisi de créer une animation d'un F-35 volant à travers des montagnes, un sujet que je trouve particulièrement puissant, autant sur le plan visuel que sonore. Pour le décor, J'ai utilisé le logiciel Gaea pour concevoir et sculpter une topographie montagneuse réaliste. J'ai ensuite travaillé le cadrage, l'éclairage et la trajectoire du F-35 pour donner une vraie impression de vitesse et de relief lors de son passage dans le canyon. Enfin, pour l'audio, j'ai récupéré des bruits de réacteurs et de passages à haute vitesse directement d'un simulateur de vol de combat (DCS), ce qui permet de rendre la vidéo beaucoup plus immersif.",
+    "software used": "Gaea, Maya, DaVinci, Sketchfab, Blender",
+    "image": "images/F-35.png",
+    "galerie": [
+      "images/F-35.png",
+      "images/F-35_02.png",
+      "images/F-35_03.png",
+      {
+        "type": "video",
+        "src": "images/F-35_portfolio.mov",
+        "poster": "images/F-35.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "categorie": ["3D", "professionnel"],
+    "name": "Assets 3D pour Code name Boogeyman",
+    "court description": "Création d’assets 3D optimisés pour l’univers CNBM.",
+    "description": "Ce projet est un ensemble d'asset 3D que j'ai fait par moi-même puis texturer par moi pour mon jeu vidéo Code name Boogeyman. Chaque modèle d'arme a été directement inspiré de modèle d'arme réel. Toutefois, ils ont été légèrement modifier pour simplifier la création d'asset tout en gardant une grande fidélité.",
+    "processus créatif": "Pour réalisé ces assets, je me suis directement inspiré de modèles d'armes réels, mais aussi d'armes utilisés dans les films John wick. Afin de pouvoir réalisé ces assets dans un temps résonable, j'ai décidé de modéliser ces armes avec une constance et une méthode de travail qui me permettait de créé plusieurs armes sans devoir a modifié de trops grand paramètres. En effet, chaque partie d'arme était modélisé selon une image de référence, mais aussi selon des critères d'hauteur, longueur et largeur spécifique.",
+    "software used": "Blender",
+    "image": "images/Weapon_02b.png",
+    "galerie": ["images/Weapon_02a.png", "images/Weapon_02b.png", "images/Weapon_Capture_03.png", "images/Weapon_Capture_04.png", "images/Weapon_Capture_05.png", "images/Weapon_Capture_06.png" ]
+  },
+  {
+    "id": 4,
+    "categorie": ["3D", "académique"],
+    "name": "Personnage 3D",
+    "court description": "Conception d’un personnage 3D",
+    "description": "Ce projet, réalisé dans le cadre du cours d'Animation 3D est un personnage extraterrestre réaliste modélisé et texturé par moi. ",
+    "processus créatif": "J'ai réalisé ce projet de manière a pouvoir utilisé l'anatomie humaine pour m'aider. En effet, j'ai voulu créé un personnage le plus réalistement possible a l'intérieur du temps alloué pour le faire. Pour que le projet sois originale et créatif, j'ai également mélanger anatomie humaine et anatomie extraterrestre afin d'obtenir ce résultat.",
+    "software used": "Maya",
+    "image": "images/T_pose.jpg",
+    "galerie": ["images/T_pose.jpg", "images/pose_02.jpg"]
+  },
+  {
+    "id": 5,
+    "categorie": ["paysage", "personnel"],
+    "name": "Paysage photoréaliste 01",
+    "court description": "Première scène de paysage travaillée en rendu réaliste.",
+    "description": "Ce projet est un projet personnel que j'ai réalisé avec Unreal engine 5 et World machine. C'est un paysage photoréaliste et optimisé a 60fps d'environ 0.25km de superficie. J'ai utilisé World machine pour créé la topographie du terrain en m'inspirant de lieux réel. J'ai ensuite exporter la heightmap dans Unreal engine pour compléter le décor avec des assets photoréalistes de Megascan. Pour optimisé ce décor et qu'il soit emplement jouable, j'ai utilisé plusieurs technique pour modifier les shaders de certains matériaux ainsi que les outils fournis par le moteur de jeu",
+    "processus créatif": "Pour ce premier paysage, j'ai utilisé World Machine afin de générer une topographie réaliste, en me basant sur plusieurs paysages européens pour trouver l'inspiration. J'ai aussi étudié la géologie de certaines zones côtières pour bien comprendre la formation des roches et leurs textures, ce qui m'a aidé à modeler un relief montagneux crédible. Concernant la flore, j'ai exploré les assets Megascans disponibles pour sélectionner des plantes européennes. J'ai ensuite fait des recherches sur ces espèces afin de comprendre où elles poussent naturellement afin de les intégrer de façon cohérente au décor.",
+    "software used": "Unreal engine 5, World machine",
+    "image": "images/Landscape_a02.png",
+    "galerie": ["images/Landscape_a01.png", "images/Landscape_a02.png", "images/Landscape_a03.png"]
+  },
+  {
+    "id": 6,
+    "categorie": ["paysage", "personnel"],
+    "name": "Paysage photoréaliste 02",
+    "court description": "Deuxième paysage photoréaliste avec une ambiance différente.",
+    "description": "Ce projet est un projet personnel similaire au précédent paysage. Cependant, j'ai seulement utilisé Unreal engine 5 pour ce paysage si ainsi que des techniques différentes d'optimisation. Certaines textures ainsi que les assets diffère du projet précédent. De plus, la mise en scène est différente puisque j'ai utilisé pour ce projet une topographique différente ainsi qu'un lac et des montagnes différentes afin de varié le décor.",
+    "processus créatif": "Pour ce deuxième paysage, j'ai choisi d'utiliser des assets de montagnes déjà modélisés et d'alléger la topographie. L'objectif était de me concentrer pleinement sur la composition, le cadrage et l'ambiance visuelle. Contrairement à mon paysage précédent, je suis parti sur un paysage Nord Américain avec un bord d'eau pour explorer un nouvel environnement et tester une flore différente. J'ai combiné plusieurs matériaux pour obtenir un rendu aquatique et des berges aussi crédibles que possible. Pour la flore, j'ai étudié certains bords d'eau pour comprendre quelles espèces y poussent et surtout comment elles se répartissent, ce qui m'a permis d'intégrer différents types de plantes de Megascan de façon beaucoup plus naturelle dans la scène.",
+    "software used": "Unreal engine 5",
+    "image": "images/Landscape_c02.png",
+    "galerie": ["images/Landscape_c01.png", "images/Landscape_c02.png", "images/Landscape_c03.png"]
+  },
+  {
+    "id": 7,
+    "categorie": ["3D", "professionnel"],
+    "name": "Conception 3D d'une estrade",
+    "court description": "Conception 3D d’une estrade pour un besoin professionnel.",
+    "description": "Ce projet est un projet professionnel réalisé pour la ville de Saint-Thérèse. il sagit d'un concept 3D d'une estrade pour la construction de ce dernier pour la ville. Il a été entièrement réaliser dans Unreal engine 5 avec l'aide d'un logiciel externe pour obtenir la ville complète de Saint-Thérèse en 3D.",
+    "processus créatif": "Pour ce projet, j'ai utilisé le logiciel externe Cesium pour obtenir la ville de Saint-Thérèse en 3D dans Unreal engine 5. J'ai ensuite modélisé l'estrade dans Unreal engine 5 en m'assurant qu'elle s'intègre parfaitement dans l'environnement existant, mais aussi quelle respecte les contraintes des différents plans donné par la ville. Les différentes prises de vue son ceux demandé par la ville afin de démontrer la faisabilité du projet de construction dans son environnement.",
+    "software used": "Unreal engine 5, Cesium",
+    "image": "images/estrade_01.png",
+    "galerie": ["images/estrade_01.png", "images/estrade_02.png", "images/estrade_03.png", "images/estrade_04.png"]
+  },
+  {
+    "id": 8,
+    "categorie": ["logiciel", "personnel"],
+    "name": "Logiciel informatique de Santé",
+    "court description": "Développement d’un logiciel pour la Santé.",
+    "description": "Ce projet est un projet ambitieux que j'ai développer durant plusieurs mois. De plus, il est important de mentionner que l'IA a été utilisé pour ce projet afin de m'aider a le réaliser. En effet, puisque c'est un logiciel a part entière qui s'installe sur son ordinateur, j'ai du demander l'aide a l'IA pour apprendre a coder la partie logiciel. Ce logiciel inclut l'ajout ou la suppression de patient. La modification complète d'un dossier de patient. Un calendrier pour le compte personnel de l'utilisateur. Ainsi qu'un système de connexion avec un compte médecin ou infirmière. L'encryption des données a l'exportation d'un dossier de patient. la possibilité de rajouter des notes écrites ou audio. La possibilité d'exporter le dossier d'un patient sous 3 formats PDF, Word et Excel. Ainsi que la possibilité d'importer un dossier de patient à l'aide d'un code.",
+    "processus créatif": "Pour concevoir ce logiciel, je me suis concentré sur la gestion des dossiers patients ainsi que les difficultés que les infirmières pouvaient avoir avec cette gestion. Afin de déterminer les véritables problèmes, j'ai échangé directement avec des infirmières en activité. Leurs retours m'ont permis de structurer les fiches médicales de manière logique et d'éliminer le superflu pour aller droit à l'essentiel lors des prises de décision. Pour l'interface visuelle, j'ai cherché à créer l'expérience la plus fluide possible en optant pour une mise en page minimaliste et claire afin d'éviter la fatigue visuelle. J'ai également utilisé un code couleur très distinct pour différencier facilement les différentes catégories de dossiers comme les antécédents ou les traitements, rendre les boutons d'action immédiatement identifiables et permettre un accès rapide à l'information en un minimum de clics.",
+    "software used": "Logiciel utilisé pour le projet 8",
+    "image": "images/sante_01.png",
+    "galerie": ["images/sante_01.png", "images/sante_02.png", "images/sante_03.png"]
+  },
+  {
+    "id": 9,
+    "categorie": ["logiciel", "personnel"],
+    "name": "Simulateur militaire",
+    "court description": "Prototype de simulateur militaire pour un usage personnel.",
+    "description": "Ce projet est un prototype de simulateur militaire que j'ai développé pour un usage personnel. Il s'agit d'un projet ambitieux qui m'a permis d'explorer différentes mécaniques de jeu et d'apprendre à créé un simulateur au plus réaliste de mes capacités. Le simulateur inclut la possibilité de choisir entre plusieurs pays regroup dans 3 différentes organisations militaires (L'OTAN, OCS et CSTO). Parmis tout les pays disponible, il est possible de choisir et de placer sur la grille de jeu différent types d'unités du char d'assaut jusqu'au simple soldat. Il est également possible de choisir entre plusieurs types de terrains et d'unités aériennes. Le simulateur inclut également un système de jour et nuit. Pour les armes, chaque types d'unités possède ses propres armes et munitions qui affect sur qui l'unité peut tirer et sur qui elle ne peut pas tirer. Le simulateur inclut également un système de broulliard de guerre qui permet d'être altérer à l'aide d'unité concus pour la guerre dites électroniques. De plus, les unités de type reconnaissance permettre de repérer les troupes plus vite a une plus grande distance. Des règles d'engagement ont également été intégré pour pouvoir contrôler les troupes au sol.",
+    "processus créatif": "Pour convevoir ce simulateur, j'ai d'abord pensé a une interface minimaliste, simple et clair ainsi que des couleurs sombres et neutre. Je me suis également inspiré de certains simulateurs qui existe déja sur le marcher comme Command Modern Operation et Sea Power. Pour le gameplay, j'ai pensé a un système de grille qui permet de placer les unités sur le terrain. J'ai également pensé a un système de brouillard de guerre qui permet d'altérer la vision des unités ennemies. Pour les unités, j'ai décidé d'inclure plusieurs types d'unités avec des caractéristiques différentes pour permettre une plus grande variété de stratégie. Enfin, j'ai inclus un système de jour et nuit pour rendre le simulateur plus réaliste.",
+    "software used": "Logiciel utilisé pour le projet 9",
+    "image": "images/simulateur_01.png",
+    "galerie": ["images/simulateur_01.png", "images/simulateur_02.png"]
+  },
+  {
+    "id": 10,
+    "categorie": ["logiciel", "professionnel"],
+    "name": "Site internet d'analyse économique",
+    "court description": "Site web conçu pour une entreprise d'économie.",
+    "description": "Ce projet si est un site internet que j'ai fais pour le bien d'une jeune entreprise d'analyse économique. Le site internet est un site qui permet de présenter l'entreprise, ainsi que ses services. Il permet également d'avoir accès à une banque de données d'articles économiques rédigés par l'entreprise. Le site offre également des calculateurs en ligne pour aider les utilisateurs à effectuer des analyses économiques de base. Enfin, le site est conçu pour être responsive, offrant une expérience utilisateur optimale sur tous les appareils.",
+    "processus créatif": "Pour concevoir ce site internet, j'ai d'abord appliqué la palette de couleurs qui m'avait été attribuée. Par la suite, j'ai créé l'intégralité de la structure en m'inspirant de sites du secteur financier et économique, afin de lui donner un aspect professionnel et adapté à son domaine. J'ai ensuite intégré l'ensemble des informations nécessaires. J'ai également ajouté une page proposant des calculateurs en ligne pour aider les utilisateurs à effectuer des analyses économiques de base. Enfin, j'ai veillé à ce que le site soit entièrement adaptatif (responsive), afin d'offrir une expérience utilisateur optimale sur tous les appareils.",
+    "software used": "Logiciel utilisé pour le projet 10",
+    "image": "images/site_01.png",
+    "galerie": ["images/site_01.png", "images/site_02.png", "images/site_03.png"]
+  }
+]

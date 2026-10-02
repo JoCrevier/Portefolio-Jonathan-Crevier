@@ -1,0 +1,165 @@
+/* =================================================================
+   POLICES & IMPORTATIONS
+   ================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+/* =================================================================
+   HEADER & NAVIGATION PRINCIPALE (DESKTOP)
+   ================================================================= */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    min-height: auto;
+    padding: 10px 20px;
+    background-color: #0b0b0b;
+}
+
+.divnav01 {
+    margin-left: 0;
+    flex: 1 1 0;
+}
+
+.nav02 {
+    padding: 20px;
+    background-color: transparent;
+    font-family: 'Fira Sans', 'Montserrat', sans-serif;
+}
+
+.nav02 ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav02 a {
+    position: relative;
+    padding-bottom: 6px;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 500;
+    color: #888888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav02 a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #d6d6d6;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.nav02 a:hover {
+    color: #d6d6d6;
+}
+
+.nav02 a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav02 a.is-active {
+    color: #d6d6d6;
+}
+
+.nav02 a.is-active::after {
+    transform: scaleX(1);
+}
+
+/* =================================================================
+   CLASSES UTILITAIRES & TYPOGRAPHIE HEADER
+   ================================================================= */
+.studentname {
+    color: #d6d6d6;
+}
+
+.titre01 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d6d6d6;
+}
+
+/* =================================================================
+   NAVIGATION RESPONSIVE (MOBILE & HAMBURGER)
+   ================================================================= */
+.nav-toggle {
+    display: none;
+    z-index: 1001;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle__bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #555555;
+    border-radius: 2px;
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Version mobile (écrans de 768px ou moins) */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 50%;                    /* Place le haut du bouton au milieu exact du header */
+        transform: translateY(-50%); /* Remonte le bouton de sa propre moitié pour un centrage vertical parfait */
+        right: 20px;
+    }
+
+    .nav02 ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        gap: 32px;
+        background-color: rgba(11, 11, 11, 0.95);
+        transition: right 0.4s ease-in-out;
+    }
+
+    .nav02 ul.is-open {
+        right: 0;
+    }
+
+    .nav02 a {
+        font-size: 1.8rem;
+    }
+}
+
+/* Animation du bouton hamburger au clic (devient blanc et forme une croix) */
+.nav-toggle.is-active .nav-toggle__bar {
+    background-color: #d6d6d6;
+}
+
+.nav-toggle.is-active .nav-toggle__bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.is-active .nav-toggle__bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.is-active .nav-toggle__bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}

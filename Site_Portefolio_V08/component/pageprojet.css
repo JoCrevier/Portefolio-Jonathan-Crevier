@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Montserrat:wght@300;400&display=swap');
+
+/* --- PARAMÈTRES GÉNÉRAUX & DÉFILEMENT --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eeebe5;
+    margin: 0;
+    font-family: 'Fira Sans', 'Montserrat', sans-serif;
+    color: #4a4843;
+}
+
+/* --- CONTENEUR PRINCIPAL (Garde le centrage 1200px) --- */
+.project-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+/* --- BOUTON RETOUR --- */
+.project-detail__back {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    transition: opacity 0.2s ease;
+}
+
+.project-detail__back:hover {
+    opacity: 0.6;
+}
+
+/* --- EN-TÊTE DU PROJET --- */
+.project-detail__header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.project-detail__number {
+    font-family: 'Anton', 'Bebas Neue', sans-serif;
+    margin: 0 0 16px 0;
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    font-weight: 800;
+    line-height: 0.9;
+    color: rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.05em;
+    display: block;
+}
+
+.project-detail__title {
+    margin: 0 0 24px 0;
+    font-family: "PT Serif", "Georgia", "Times New Roman", serif;
+    font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.05;
+}
+
+/* --- METADONNÉES : ALIGNEMENT PARFAIT SUR UNE MÊME LIGNE HORIZONTALE --- */
+.project-detail__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Métadonnées à gauche, Bouton à droite */
+    gap: 24px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Regroupement des catégories et logiciels à gauche sur une seule ligne */
+.project-detail__meta-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-detail__categories {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-detail__categories span {
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: transparent;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2b2b2b;
+    white-space: nowrap;
+}
+
+.project-detail__software {
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    color: #4a4843;
+    white-space: nowrap;
+}
+
+.project-detail__software-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    margin-right: 6px;
+    letter-spacing: 0.1em;
+}
+
+/* Bouton Galerie aligné complètement à droite */
+.project-detail__gallery-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.project-detail__gallery-link:hover {
+    background-color: #000000;
+    color: #eeebe5;
+    border-color: #000000;
+}
+
+/* --- SECTIONS TEXTE (DESCRIPTION & PROCESSUS CRÉATIF) --- */
+.project-detail__section {
+    margin-bottom: 50px;
+}
+
+.project-detail__section h2 {
+    font-family: 'Anton', 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.project-detail__description,
+.project-detail__process {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4a4843;
+    max-width: 48rem;
+    text-align: justify;
+}
+
+/* --- GALERIE (2 Colonnes) --- */
+.project-detail__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    background-color: transparent;
+}
+
+.project-detail__gallery-item {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.project-detail__galleryButton {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+    display: block;
+    cursor: zoom-in;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+}
+
+.project-detail__gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16 / 10;
+    background-color: transparent;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.project-detail__gallery-item img:hover {
+    transform: scale(1.03);
+}
+
+/* --- RESPONSIVE (MOBILE & TABLETTE) --- */
+@media (max-width: 900px) {
+    .project-detail {
+        padding: 30px 16px;
+    }
+
+    .project-detail__meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .project-detail__meta-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .project-detail__gallery-link {
+        align-self: flex-start;
+    }
+
+    .project-detail__gallery {
+        grid-template-columns: 1fr;
+    }
+}
