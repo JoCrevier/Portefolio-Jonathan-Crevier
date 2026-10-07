@@ -18,7 +18,7 @@
 
 * Quelle est ma prochaine étape concrète? Corriger des derniers détails et remettre le protfolio. 
 
-* Est-ce que j'ai utilisé l'IA? Si oui, pour quoi et qu'est-ce que ça m'a appris? J'ai utiliser l'IA pour essayer de trouver des idées de design de "site web" / portefolio. J'ai appris a utilisé figma make et a créé des prompts afin d'avoir un "template" qui représentait ma vision. 
+* Est-ce que j'ai utilisé l'IA? Si oui, pour quoi et qu'est-ce que ça m'a appris? J'ai utiliser l'IA pour coder mon portfolio. Je n'ai personnellement rien appris en particulier puisque j'avais déjà utilisé l'IA pour des projets personnels. 
 
 # IA prompt
 
