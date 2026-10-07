@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Jonathan C</title>
+
+    <!-- Feuilles de style CSS -->
     <link rel="stylesheet" href="./component/about.css">
     <link rel="stylesheet" href="./component/base.css">
     <link rel="stylesheet" href="./component/footer.css">
@@ -15,12 +17,12 @@
     <link rel="stylesheet" href="./component/portfolio.css">
     <link rel="stylesheet" href="./component/tools.css">
     <link rel="stylesheet" href="./component/contact.css">
-    <meta name="robots" content="noindex, nofollow">
 </head>
 
 <body>
 
-    <header>
+    <!-- En-tête / Navigation principale -->
+    <header role="banner">
         <div class="background01">
 
             <div class="nom01">
@@ -28,7 +30,7 @@
             </div>
 
             <div class="divnav01">
-                <nav class="nav02">
+                <nav class="nav02" aria-label="Navigation principale">
                     <ul>
                         <li><a href="#projets">PROJETS</a></li>
                         <li><a href="#propos">À PROPOS</a></li>
@@ -38,7 +40,7 @@
                 </nav>
             </div>
 
-            <button class="nav-toggle" aria-label="Ouvrir le menu">
+            <button class="nav-toggle" type="button" aria-label="Ouvrir le menu">
                 <span class="nav-toggle__bar"></span>
                 <span class="nav-toggle__bar"></span>
                 <span class="nav-toggle__bar"></span>
@@ -47,7 +49,8 @@
         </div>
     </header>
 
-    <herosection>
+    <!-- Section d'accueil (Hero) -->
+    <section class="hero" tabindex="0" aria-label="Présentation">
         <div class="background02">
 
             <div class="presentation">
@@ -63,47 +66,43 @@
                 </div>
 
                 <div class="button01">
-                    <button>
-                        <p>VOIR LES PROJETS</p>
-                    </button>
+                    <a href="#projets" class="button-link">
+                        <button type="button">
+                            <span>VOIR LES PROJETS</span>
+                        </button>
+                    </a>
                 </div>
             </div>
 
         </div>
-    </herosection>
+    </section>
 
+    <!-- Contenu principal du site -->
     <main class="main">
 
-        <div id="projets" class="projet">
+        <!-- Section Projets -->
+        <section id="projets" class="projet" aria-label="Projets sélectionnés">
             <div class="hautpage01">
-                <p class="titre02">Projets sélectionnés</p>
-                <button type="button" class="projectfilters-toggle" aria-controls="project-filters" aria-expanded="false">
-                    <span class="projectfilters-toggle__label">Catégories</span>
-                    <span class="projectfilters-toggle__icon" aria-hidden="true">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </button>
-                <nav class="nav03">
-                    <button type="button" class="projectfilters-close" aria-label="Fermer les catégories">Fermer</button>
-                    <ul id="project-filters">
+                <h2 class="titre02">Projets sélectionnés</h2>
+                <nav class="nav03" aria-label="Filtres des projets">
+                    <ul>
                         <li><button type="button" class="projectfilter is-active" data-filter="all">Tous</button></li>
-                        <li><button type="button" class="projectfilter"
-                                data-filter="professionnel">Professionnel</button></li>
+                        <li><button type="button" class="projectfilter" data-filter="professionnel">Professionnel</button></li>
                         <li><button type="button" class="projectfilter" data-filter="personnel">Personnel</button></li>
-                        <li><button type="button" class="projectfilter" data-filter="académique">Académique</button>
-                        </li>
+                        <li><button type="button" class="projectfilter" data-filter="académique">Académique</button></li>
                         <li><button type="button" class="projectfilter" data-filter="3d">3D</button></li>
                         <li><button type="button" class="projectfilter" data-filter="paysage">Paysage</button></li>
                         <li><button type="button" class="projectfilter" data-filter="logiciel">Logiciel</button></li>
                     </ul>
                 </nav>
             </div>
-            <div class="listeprojet"></div>
-        </div>
 
-        <section id="propos" class="propos">
+            <!-- Liste des projets (injectés dynamiquement par JavaScript) -->
+            <div class="listeprojet"></div>
+        </section>
+
+        <!-- Section À Propos (Accessibilité TAB réactivée via tabindex="0") -->
+        <section id="propos" class="propos" tabindex="0" aria-label="À propos">
             <div class="propos__inner">
                 <div class="propos__left">
                     <p class="propos__eyebrow">À PROPOS</p>
@@ -164,9 +163,10 @@
             </div>
         </section>
 
-        <div id="outils" class="outils">
+        <!-- Section Outils & Logiciels (Accessibilité TAB réactivée via tabindex="0") -->
+        <section id="outils" class="outils" tabindex="0" aria-label="Outils et Logiciels">
             <div class="hautpage02">
-                <p class="titre05">Outils & Logiciels</p>
+                <h2 class="titre05">Outils & Logiciels</h2>
                 <p class="titre06">14 outils maîtrisés</p>
             </div>
             <div class="listeoutils">
@@ -190,10 +190,10 @@
                     <li><span class="toolname">Blender</span><span class="toolcategory">3D</span></li>
                 </ul>
             </div>
+        </section>
 
-        </div>
-
-        <section id="contact" class="contact">
+        <!-- Section Contact -->
+        <section id="contact" class="contact" tabindex="0" aria-label="Contact">
             <span class="contact__subtitle">CONTACT</span>
 
             <div class="contact__title-container">
@@ -201,27 +201,28 @@
                 <h2 class="contact__title contact__title--outlined">ENSEMBLE.</h2>
             </div>
 
-            <a href="mailto:hello@alaurent.studio" class="contact__email">hello@alaurent.studio</a>
+            <a href="mailto:hello@alaurent.studio" class="contact__email">2242575@cmontmorency.qc.ca</a>
         </section>
 
     </main>
 
-    <footer class="footer">
+    <!-- Pied de page -->
+    <footer class="footer" role="contentinfo">
         <div class="footer__divider"></div>
 
         <div class="footer__content">
             <span class="footer__brand">C. JONATHAN</span>
 
             <div class="footer__links">
-                <a href="#">INSTAGRAM</a>
+                <a href="#">YOUTUBE</a>
                 <a href="#">LINKEDIN</a>
-                <a href="#">BEHANCE</a>
             </div>
 
             <span class="footer__copy">&copy; 2026</span>
         </div>
     </footer>
 
+    <!-- Scripts JavaScript -->
     <script src="./js/header.js"></script>
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/lightbox.js"></script>

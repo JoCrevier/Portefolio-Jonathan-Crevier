@@ -6,9 +6,6 @@ import { createLightbox, openLightbox } from "./lightbox.js";
 
 const projectContainer = document.querySelector(".listeprojet");
 const projectFilterButtons = document.querySelectorAll(".projectfilter");
-const projectFiltersToggle = document.querySelector(".projectfilters-toggle");
-const projectFiltersNav = document.querySelector(".nav03");
-const projectFiltersClose = document.querySelector(".projectfilters-close");
 let normalizedProjects = [];
 
 // Initialisation globale de la lightbox via le module externe
@@ -28,58 +25,11 @@ const projectObserver = new IntersectionObserver((entries) => {
 if (projectContainer) {
     loadProjects();
 
-    const closeProjectFilters = () => {
-        if (!projectFiltersNav || !projectFiltersToggle) return;
-        projectFiltersNav.classList.remove("is-open");
-        projectFiltersToggle.setAttribute("aria-expanded", "false");
-        document.body.classList.remove("projectfilters-open");
-    };
-
-    const openProjectFilters = () => {
-        if (!projectFiltersNav || !projectFiltersToggle) return;
-        projectFiltersNav.classList.add("is-open");
-        projectFiltersToggle.setAttribute("aria-expanded", "true");
-        document.body.classList.add("projectfilters-open");
-    };
-
-    if (projectFiltersToggle && projectFiltersNav) {
-        projectFiltersToggle.addEventListener("click", () => {
-            const isOpen = projectFiltersNav.classList.contains("is-open");
-            if (isOpen) {
-                closeProjectFilters();
-            } else {
-                openProjectFilters();
-            }
-        });
-    }
-
-    if (projectFiltersClose) {
-        projectFiltersClose.addEventListener("click", closeProjectFilters);
-    }
-
-    if (projectFiltersNav) {
-        projectFiltersNav.addEventListener("click", (event) => {
-            if (event.target === projectFiltersNav) {
-                closeProjectFilters();
-            }
-        });
-    }
-
-    document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-            closeProjectFilters();
-        }
-    });
-
     projectFilterButtons.forEach((button) => {
         button.addEventListener("click", () => {
             const filter = button.dataset.filter || "all";
             projectFilterButtons.forEach((btn) => btn.classList.toggle("is-active", btn === button));
             renderProjects(filter);
-
-            if (window.innerWidth <= 760 && projectFiltersNav && projectFiltersToggle) {
-                closeProjectFilters();
-            }
         });
     });
 }

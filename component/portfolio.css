@@ -15,8 +15,8 @@
     justify-content: space-between; 
     gap: 20px;
     width: 100%;
-    position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .titre01,
@@ -48,39 +48,6 @@
     -webkit-overflow-scrolling: touch; 
     -ms-overflow-style: none;
     scrollbar-width: none;
-}
-
-.projectfilters-close {
-    display: none;
-}
-
-.projectfilters-toggle {
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-    gap: 14px;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-    background: rgba(255, 255, 255, 0.35);
-    padding: 12px 14px;
-    color: #000000;
-    font-family: 'Anton', 'Bebas Neue', sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.projectfilters-toggle__icon {
-    display: inline-flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.projectfilters-toggle__icon span {
-    width: 18px;
-    height: 2px;
-    background: currentColor;
-    display: block;
 }
 
 .nav03::-webkit-scrollbar {
@@ -123,6 +90,39 @@
     background: #000000;
     color: #ffffff;
     border-color: #000000;
+}
+
+/* =================================================================
+   ADAPTATION MOBILE & ÉCRANS ÉTROITS POUR LES CATÉGORIES
+   ================================================================= */
+@media (max-width: 900px) {
+    .hautpage01 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 20px;
+        gap: 16px;
+    }
+
+    .titre02 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .nav03 {
+        width: 100%;
+        order: 2;
+    }
+
+    .nav03 ul {
+        justify-content: flex-start;
+        flex-wrap: wrap; /* Les catégories se placent proprement sur plusieurs lignes si besoin */
+        gap: 8px;
+    }
+
+    .nav03 button {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
 }
 
 .listeprojet {
@@ -292,102 +292,6 @@
 
     .projectcard__content {
         padding: 24px;
-    }
-}
-
-@media (max-width: 760px) {
-    .hautpage01 {
-        padding: 24px 16px;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        gap: 14px;
-    }
-
-    .titre02 {
-        flex: 1 1 auto;
-        min-width: 0;
-    }
-
-    .projectfilters-toggle {
-        display: inline-flex;
-        order: 2;
-        margin-left: auto;
-    }
-
-    .nav03 {
-        order: 3;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        inset: 0;
-        z-index: 120;
-        overflow: hidden;
-        white-space: normal;
-        padding: 24px;
-        background: rgba(19, 15, 10, 0.58);
-        backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(6px);
-        opacity: 0;
-        transition: opacity 0.28s ease;
-    }
-
-    .nav03.is-open {
-        display: flex;
-        opacity: 1;
-    }
-
-    .nav03 ul {
-        width: min(92vw, 380px);
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: flex-start;
-        gap: 10px;
-        padding: 20px;
-        background: #f7f4ee;
-        border: 1px solid rgba(0, 0, 0, 0.12);
-        box-shadow: 0 28px 60px rgba(0, 0, 0, 0.25);
-        transform: translateY(18px) scale(0.98);
-        opacity: 0;
-        transition: transform 0.28s ease, opacity 0.28s ease;
-    }
-
-    .nav03.is-open ul {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-    }
-
-    .projectfilters-close {
-        display: inline-flex;
-        align-self: flex-end;
-        margin-bottom: 16px;
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        background: rgba(255, 255, 255, 0.55);
-        color: #1f1b16;
-        font-family: 'Anton', 'Bebas Neue', sans-serif;
-        font-size: 0.7rem;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        padding: 10px 12px;
-        cursor: pointer;
-    }
-
-    .nav03 ul::before {
-        content: "Catégories";
-        display: block;
-        margin-bottom: 6px;
-        font-family: 'Fira Sans', 'Montserrat', sans-serif;
-        font-size: 0.72rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: #6d655a;
-    }
-
-    .nav03 button {
-        width: 100%;
-        text-align: left;
-        padding: 12px 14px;
     }
 }
 
